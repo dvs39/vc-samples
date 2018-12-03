@@ -20,6 +20,24 @@
         <directory virtualPath="$/Scripts" searchPattern="*.js" searchSubdirectories="true" />
     </scripts>
 
+   <settings>
+    <group name="CustomerReviews">
+      <setting>
+        <name>CustomerReviews.Web.General.DenyList</name>
+        <valueType>string</valueType>
+        <defaultValue>shit,crap</defaultValue>
+        <title>Deny List</title>
+        <description>Review cant be displyed if it contains any of these word</description>
+      </setting>
+      <setting>
+        <name>CustomerReviews.Web.General.IsSpamFilterEnabled</name>
+        <valueType>boolean</valueType>
+        <defaultValue>false</defaultValue>
+        <title>Spam Filter Enabled</title>
+        <description>Spam Filter Enabled</description>
+      </setting>
+    </group>
+  </settings>
     <!--<settings>
         <group name="General">
             <setting>
