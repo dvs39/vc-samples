@@ -1,15 +1,33 @@
-﻿<div class="blade-static __bottom" ng-if="pageSettings.itemsPerPageCount < pageSettings.totalItems" ng-include="'pagerTemplate.html'"></div>
+<div class="blade-static __bottom" ng-if="pageSettings.itemsPerPageCount < pageSettings.totalItems" ng-include="'pagerTemplate.html'"></div>
 <div class="blade-content">
     <div class="blade-inner">
         <div class="inner-block">
             <form class="form" name="formScope">
                 <div ng-init="setForm(formScope)">
-                    <label class="form-label">{{'customerReviews.blades.review-details.isActive' | translate}}</label>
-                    <div class="form-input">
-                        <label class="form-label __switch">
-                            <input ng-model="blade.currentEntity.isActive" type="checkbox" placeholder="{{'catalog.blades.catalog-detail.placeholders.enter-name' | translate}}" focus-on="">
-                            <span class="switch"></span>
-                        </label>
+                    <div class="form-group">
+                        <label class="form-label">{{'customerReviews.blades.review-details.author' | translate}}</label>
+                        <div class="form-input">
+                            <label class="form-label">
+                                <input ng-disabled="true" ng-model="blade.currentEntity.authorNickname">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">{{'customerReviews.blades.review-details.content' | translate}}</label>
+                        <div class="form-input">
+                            <label class="form-label">
+                                <input ng-disabled="true" ng-model="blade.currentEntity.content" placeholder="{{'customerReviews.blades.review-details.content' | translate}}">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">{{'customerReviews.blades.review-details.isActive' | translate}}</label>
+                        <div class="form-input">
+                            <label class="form-label __switch">
+                                <input ng-model="blade.currentEntity.isActive" type="checkbox" placeholder="{{'catalog.blades.catalog-detail.placeholders.enter-name' | translate}}" focus-on="">
+                                <span class="switch"></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </form>

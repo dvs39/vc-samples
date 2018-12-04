@@ -10,7 +10,10 @@
         "title": "Customer Review List"
       },
       "review-details": {
-        "isActive": "Is Active"
+        "isActive": "Is Active",
+        "author": "Author",
+        "content": "Content",
+        "title": "'s review"
       }
     },
     "dialogs": {

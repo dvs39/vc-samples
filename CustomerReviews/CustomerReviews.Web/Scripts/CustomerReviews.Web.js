@@ -16,6 +16,7 @@ angular.module(moduleTemplateName, [])
                     '$scope', 'platformWebApp.bladeNavigationService', function ($scope, bladeNavigationService) {
                         var newBlade = {
                             id: 'reviewsList',
+                            title: 'customerReviews.blades.review-list.title',
                             controller: 'CustomerReviews.Web.reviewsListController',
                             template: 'Modules/$(CustomerReviews.Web)/Scripts/blades/reviews-list.tpl.html',
                             isClosingDisabled: true
