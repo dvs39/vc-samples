@@ -1,18 +1,28 @@
 {
-    "customerReviews": {
-        "blades": {
-            "review-list": {
-                "labels": {
-                    "content": "Content",
-                    "modifiedDate": "Last updated",
-                    "no-review": "No Customer Reviews found"
-                }
-            }
+  "customerReviews": {
+    "blades": {
+      "review-list": {
+        "labels": {
+          "content": "Content",
+          "modifiedDate": "Last updated",
+          "no-review": "No Customer Reviews found"
         },
-        "widgets": {
-            "item-detail": {
-                "title": "Customer reviews"
-            }
-        }
+        "title": "Customer Review List"
+      },
+      "review-details": {
+        "isActive": "Is Active"
+      }
+    },
+    "dialogs": {
+      "item-save": {
+        "title": "Save changes",
+        "message": "The item has been modified. Do you want to save changes?"
+      },
+    },
+    "widgets": {
+      "item-detail": {
+        "title": "Customer reviews"
+      }
     }
+  }
 }
