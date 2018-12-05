@@ -16,6 +16,9 @@ namespace CustomerReviews.Data.Model
 
         public bool IsActive { get; set; }
 
+        [Range(0, 5)]
+        public decimal Rate { get; set; }
+
         [Required]
         [StringLength(128)]
         public string ProductId { get; set; }
@@ -35,6 +38,7 @@ namespace CustomerReviews.Data.Model
             customerReview.Content = Content;
             customerReview.IsActive = IsActive;
             customerReview.ProductId = ProductId;
+            customerReview.Rate = Rate;
 
             return customerReview;
         }
@@ -56,6 +60,7 @@ namespace CustomerReviews.Data.Model
             Content = customerReview.Content;
             IsActive = customerReview.IsActive;
             ProductId = customerReview.ProductId;
+            Rate = customerReview.Rate;
 
             return this;
         }
@@ -69,6 +74,7 @@ namespace CustomerReviews.Data.Model
             target.Content = Content;
             target.IsActive = IsActive;
             target.ProductId = ProductId;
+            target.Rate = Rate;
         }
     }
 }
