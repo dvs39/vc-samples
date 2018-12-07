@@ -24,7 +24,8 @@
     },
     "widgets": {
       "item-detail": {
-        "title": "Customer reviews"
+        "title": "Customer reviews",
+        "rating": "Average rating"
       }
     }
   }

@@ -119,6 +119,8 @@
     <Content Include="Localizations\en.customerReviews.json" />
     <Content Include="Scripts\blades\reviews-props.js" />
     <Content Include="Scripts\blades\reviews-props.tpl.html" />
+    <Content Include="Scripts\widgets\customerReviewRatingWidget.js" />
+    <Content Include="Scripts\widgets\customerReviewRatingWidget.tpl.html" />
     <Content Include="Scripts\widgets\customerReviewWidget.js" />
     <Content Include="Scripts\widgets\customerReviewWidget.tpl.html" />
     <None Include="module.ignore" />

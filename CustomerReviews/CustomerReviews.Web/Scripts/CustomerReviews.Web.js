@@ -46,5 +46,12 @@ angular.module(moduleTemplateName, [])
             template: 'Modules/$(CustomerReviews.Web)/Scripts/widgets/customerReviewWidget.tpl.html'
         };
         widgetService.registerWidget(itemReviewsWidget, 'itemDetail');
+
+        var ratingReviewsWidget = {
+            controller: 'CustomerReviews.Web.customerReviewRatingWidgetController',
+            template: 'Modules/$(CustomerReviews.Web)/Scripts/widgets/customerReviewRatingWidget.tpl.html'
+        };
+        widgetService.registerWidget(ratingReviewsWidget, 'itemDetail');
+
     }
 ]);
